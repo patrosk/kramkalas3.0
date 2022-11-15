@@ -1,0 +1,61 @@
+@import "./variables.css";
+/* is main necessary to include? */
+
+header {
+  background-color: var(--off-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+  border-bottom: 4px solid var(--light-orange);
+  height: 6rem;
+}
+.hamburger {
+  position: relative;
+  width: 30px;
+  height: 25px;
+  display: inline-block;
+}
+.hamburger-inner {
+  display: block;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: var(--dark-orange);
+  border-radius: 6px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger-inner::before {
+  top: 0.9rem;
+}
+.hamburger-inner::after {
+  top: 0.45rem;
+}
+/* .hamburger-inner.is-active {
+  transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+.hamburger-inner.is-active::before {
+  transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+  opacity: 0;
+}
+.hamburger-inner.is-active::after {
+  transform: translate3d(0, -0.9rem, 0) rotate(-90deg);
+} */
+
+.dropdown-content {
+  display: none;
+}
+.desktop-menu {
+  display: none;
+}

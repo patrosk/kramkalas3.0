@@ -1,0 +1,44 @@
+:root {
+  /* colors */
+  --white: #fffaf2;
+  --off-white: #fffcf2;
+  --light-orange: #ffd79b;
+  --dark-orange: #ff8642;
+  --light-grey: #686868;
+  --dark-grey: #4b4b4b;
+
+  /* font-sizes */
+  font-size: 16px;
+  --x-small: 0.8rem;
+  --small: 1rem;
+  --medium: 1.25rem;
+  --large: 2rem;
+  --x-large: 2.5rem;
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  src: url("./fonts/Comfortaa-Regular.woff2") format("woff2"),
+    url("./fonts/Comfortaa-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Convergence";
+  src: url("./fonts/Convergence-Regular.woff2") format("woff2"),
+    url("./fonts/Convergence-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("./fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("./fonts/PlayfairDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,11 @@
+@import "./variables.css";
+
+.kim .img-container {
+  width: 17rem;
+}
+
+.kim .img-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+}

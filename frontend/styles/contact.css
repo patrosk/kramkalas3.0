@@ -1,0 +1,44 @@
+@import "./variables.css";
+
+.hero-contact-text {
+  font-family: Convergence;
+  margin-top: 3rem;
+}
+.contact-container {
+  margin-top: 6rem;
+}
+.contact-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 3rem;
+}
+.contact-card .img-container {
+  height: 5.5rem;
+  width: 5.5rem;
+  object-fit: cover;
+  border-radius: 5.5rem;
+}
+.contact-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-content h3 {
+  margin: 0 0 0.5rem 0;
+  font-weight: 100;
+  text-align: center;
+}
+.contact-content p {
+  margin: 0.2rem;
+}
+.contact-content .email a {
+  font-family: Playfair Display;
+  color: var(--dark-grey);
+}

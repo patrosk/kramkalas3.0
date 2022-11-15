@@ -1,0 +1,52 @@
+@import "./variables.css";
+@import "./header.css";
+@import "./footer.css";
+@import "./home.css";
+@import "./about.css";
+@import "./contact.css";
+@import "./kim.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--white);
+  font-family: Playfair Display;
+  color: var(--dark-grey);
+}
+
+.main {
+  padding: 40px;
+}
+
+.main a {
+  font-family: Convergence;
+  color: var(--dark-orange);
+}
+.hero {
+  margin-top: 5rem;
+}
+
+h1 {
+  font-size: var(--x-large);
+  font-family: Comfortaa;
+  color: var(--dark-orange);
+}
+h2 {
+  font-size: var(--large);
+  font-family: Convergence;
+  color: var(--dark-orange);
+  font-weight: 300;
+}
+h3 {
+  font-size: var(--medium);
+  font-family: Convergence;
+  color: var(--dark-orange);
+}
+h4,
+h5 {
+  font-size: var(--small);
+  font-family: Convergence;
+}

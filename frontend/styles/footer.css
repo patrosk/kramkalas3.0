@@ -1,0 +1,48 @@
+@import "./variables.css";
+/* is main necessary to include? */
+@import "./main.css";
+
+footer {
+  background-color: var(--off-white);
+  padding: 0.5rem;
+  border-top: 4px solid var(--light-orange);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer svg {
+  transform: translateX(3rem);
+}
+.footer-content {
+  margin: 0 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-list > li {
+  font-family: Convergence;
+  color: var(--dark-orange);
+  font-size: var(--medium);
+  text-align: right;
+  margin-bottom: 2rem;
+}
+.contact,
+.address,
+.socials {
+  margin-top: 1rem;
+}
+.contact li,
+.address li,
+.socials li {
+  color: var(--dark-grey);
+  font-size: var(--small);
+  margin-top: 0.3rem;
+}
+footer p {
+  font-size: var(--x-small);
+  text-align: center;
+}
