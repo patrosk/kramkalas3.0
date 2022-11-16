@@ -40,10 +40,13 @@ export default {
         rows: 3,
       },
       {
-        name: 'bookEscerpt',
+        name: 'bookExcerpt',
         title: 'Book excerpt',
-        type: 'text',
-        rows: 3,
+        type: 'array',
+        of: [
+          {name: 'paragraph',
+            type: 'string',}
+        ]
       },
     ]
 };

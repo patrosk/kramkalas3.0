@@ -3,26 +3,19 @@
     <h1>{{ aboutPage.aboutPage[0].pageBuilder[0].h1 }}</h1>
     <section class="hero">
       <p class="hero-description-1">
-        Kramkalas är ett litet bolag som, på ett unikt sätt, jobbar för
-        samhällets olika delar. Jämställdhet, jämlikhet och inkludering är våra
-        värderingar. Vi tror på att vi kan använda våra talanger, tillsammans,
-        för att göra skillnad.
+        {{ aboutPage.aboutPage[0].pageBuilder[0].heroDescription1 }}
       </p>
       <p class="hero-description-2">
-        Vårt nuvarande projekt, nallebjörnen Kim, kommer lanseras inom kort. I
-        detta projekt har vi skrivit barnböcker i rim, gjort musik och
-        uppmuntrar barn till att leka med ord. 50% av vinsten på böckerna kommer
-        att gå till olika organisationer som gynnar barn.
+        {{ aboutPage.aboutPage[0].pageBuilder[0].heroDescription2 }}
       </p>
       <p class="hero-description-3">
-        Vi tar gärna emot donationer och sponsorer.
+        {{ aboutPage.aboutPage[0].pageBuilder[0].heroDescription3 }}
       </p>
     </section>
     <section class="team">
-      <h2>Vårt team</h2>
+      <h2>{{ aboutPage.aboutPage[0].pageBuilder[1].heading }}</h2>
       <p class="team-description">
-        Vi som är Kramkalas kommer från olika yrkeskategorier såsom
-        betongbranschen, marknadsföring, musikbranschen och webbutveckling.
+        {{ aboutPage.aboutPage[0].pageBuilder[1].teamDescription }}
       </p>
       <div class="team-container">
         <div class="team-card">
@@ -39,7 +32,10 @@
       </div>
     </section>
     <section class="partners">
-      <h2>Våra partners</h2>
+      <h2>{{ aboutPage.aboutPage[0].pageBuilder[2].heading }}</h2>
+      <p class="partners-description">
+        {{ aboutPage.aboutPage[0].pageBuilder[2].partnersDescription }}
+      </p>
       <div class="partners-container">
         <div class="partner-card">
           <div class="img-container">
@@ -57,18 +53,19 @@
       </div>
     </section>
     <section class="projects">
-      <h2>Framtida projekt</h2>
+      <h2>{{ aboutPage.aboutPage[0].pageBuilder[3].heading }}</h2>
       <div class="projects-container">
         <p>
-          Vi har många idéer för framtida projekt som främjar rättvisa,
-          jämställdhet och likabehandling.
+          {{ aboutPage.aboutPage[0].pageBuilder[3].projectsDescription1 }}
         </p>
         <p>
-          Är ni ett företag eller en organisation som vill samarbeta med oss? Ni
-          kanske har en grym idé till ett projekt som vi kan samarbeta på? Hör
-          av er till oss!
+          {{ aboutPage.aboutPage[0].pageBuilder[3].projectsDescription2 }}
         </p>
-        <p class="email"><a href="#">mejla oss!</a></p>
+        <p class="email">
+          <a href="#">{{
+            aboutPage.aboutPage[0].pageBuilder[3].companyEmailText
+          }}</a>
+        </p>
       </div>
     </section>
   </section>

@@ -1,16 +1,18 @@
 <template>
   <section>
-    <h1>Kontakta oss</h1>
+    <h1>{{ contactPage.contactPage[0].pageBuilder[0].h1 }}</h1>
     <section class="hero">
-      <p class="hero-description">
-        Undrar du över hur vi jobbar, vad vi har för projekt på gång, eller har
-        du rentav en grym idé som du vill samarbeta med oss på? Tveka inte att
-        ta kontakt med oss!
+      <p class="hero-description-1">
+        {{ contactPage.contactPage[0].pageBuilder[0].heroDescription1 }}
       </p>
-      <p class="hero-contact-text">
-        Hör av dig till någon av oss eller skicka ditt mejl till:
+      <p class="hero-description-2">
+        {{ contactPage.contactPage[0].pageBuilder[0].heroDescription2 }}
       </p>
-      <p class="email"><a href="#">kontakt@kramkalas.se</a></p>
+      <p class="email">
+        <a href="#">{{
+          contactPage.contactPage[0].pageBuilder[0].heroEmailText
+        }}</a>
+      </p>
     </section>
     <section class="contact-container">
       <div class="contact-card">
@@ -46,3 +48,15 @@
     </section>
   </section>
 </template>
+
+<script>
+import { groq } from "@nuxtjs/sanity";
+const query = groq`{ "contactPage": *[_type == "contactPage"]}`;
+
+export default {
+  async fetch() {
+    this.contactPage = await this.$sanity.fetch(query);
+  },
+  data: () => ({ contactPage: "" }),
+};
+</script>

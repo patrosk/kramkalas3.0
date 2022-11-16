@@ -1,88 +1,87 @@
 <template>
   <section>
-    <h1>Nallebjörnen Kim</h1>
+    <h1>{{ kimPage.kimPage[0].pageBuilder[0].h1 }}</h1>
     <section class="kim">
       <div class="img-container">
         <img src="../images/kim.png" alt="" />
       </div>
       <section class="hemma-hos-kim">
-        <h3>Hemma hos Kim</h3>
+        <h3>{{ kimPage.kimPage[0].pageBuilder[1].heading }}</h3>
         <p>
-          Hej och välkommen hem till mig, jag heter Kim!
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph1a }}
           <br />
-          Här kan du hitta böcker, sagor och inspelningar i rim!
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph1b }}
         </p>
         <p>
-          Jag brukar ge mig ut på äventyr och träffa alla mina vänner.
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph2a }}
           <br />
-          Följ med mig ut, så kanske vi träffar någon du känner.
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph2b }}
         </p>
         <p>
-          Jag vill alltid att alla ska få vara med och leka.
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph3a }}
           <br />
-          Du är alltid välkommen och behöver aldrig tveka!
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph3b }}
         </p>
         <p>
-          Hemma hos mig så vill jag att vi respekterar varandra.
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph4a }}
           <br />
-          Det blir så mycket roligare om vi alla gör detsamma.
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph4b }}
           <br />
-          Och om vi alla har roligt så kan vi förändra världen tillsammans.
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph4b }}
         </p>
         <p>
-          Jag tycker att det är väldigt roligt att leka med rim!
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph5a }}
           <br />
-          Försök ni också, ni kommer snabbt in i ett sting.
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph5b }}
           <br />
-          Ni behöver inte rimma på allting.
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph5c }}
           <br />
-          Men det roligaste är att avsluta en mening med ett kling!
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph5d }}
           <br />
-          Sen kan ni skoja med era föräldrar som inte förstår någonting!
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph5e }}
         </p>
         <p>
-          I mina sagor och äventyr försöker vi att leka med orden.
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph6a }}
           <br />
-          Om ni lär er att rimma så kanske ni blir bäst på jorden!
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph6b }}
         </p>
         <p>
-          Lek med orden och böj dem hur du vill!
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph7a }}
           <br />
-          Med ett ord kan du göra mycket, det står aldrig still.
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph7b }}
         </p>
         <p>
-          Med ord kan du förändra världen!
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph8a }}
           <br />
-          Men att lära sig använda dem är bara en del av färden.
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph8b }}
         </p>
       </section>
       <section class="books">
-        <h2>Böcker om Kim</h2>
+        <h2>{{ kimPage.kimPage[0].pageBuilder[2].heading }}</h2>
         <p class="books-description">
-          Följ med nallebjörnen Kim på hens små äventyr i rim! Här kan du se
-          vilka böcker som finns och vad varje bok stöder.
+          {{ kimPage.kimPage[0].pageBuilder[2].booksDescription1 }}
           <br />
           <br />
-          Vi kommer inom kort lansera musiksagor på Spotify.
+          {{ kimPage.kimPage[0].pageBuilder[2].booksDescription2 }}
           <br />
           <br />
-          Förhandsboka gärna våra kommande sagor.
+          {{ kimPage.kimPage[0].pageBuilder[2].booksDescription3 }}
         </p>
         <div class="books-container">
           <div class="book">
-            <h4>Nallebjörnen Kim på promenad</h4>
+            <h4>{{ kimPage.kimPage[0].pageBuilder[3].heading }}</h4>
             <div class="img-container">
               <img src="../images/javacutie.jpg" alt="" />
             </div>
-            <p class="book-description">utdrag ur boken:</p>
-            <p class="book-excerpt">
-              "Nu var de framme vid staden och tog farväl.
-              <br />
-              Tack Kim, du är min vän så kär!
-              <br />
-              Tack själv, svarade Kim. Jag önskar dig väl.
-              <br />
-              Jag ska alltid minnas dig, en god vän du är."
+            <p class="book-description">
+              {{ kimPage.kimPage[0].pageBuilder[3].bookDescription }}:
+            </p>
+            <p
+              class="book-excerpt"
+              v-for="excerpt in kimPage.kimPage[0].pageBuilder[3].bookExcerpt"
+              :key="excerpt"
+            >
+              {{ excerpt }}
             </p>
           </div>
         </div>
@@ -90,3 +89,15 @@
     </section>
   </section>
 </template>
+
+<script>
+import { groq } from "@nuxtjs/sanity";
+const query = groq`{ "kimPage": *[_type == "kimPage"]}`;
+
+export default {
+  async fetch() {
+    this.kimPage = await this.$sanity.fetch(query);
+  },
+  data: () => ({ kimPage: "" }),
+};
+</script>
