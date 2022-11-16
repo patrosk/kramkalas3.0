@@ -7,3 +7,5 @@
 Examensarbete WU21
 
 Hemsida till bolaget Kramkalas 🥳
+
+Live page (work in progress): https://kramkalas.vercel.app/
