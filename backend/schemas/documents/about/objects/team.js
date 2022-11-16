@@ -15,5 +15,13 @@ export default {
         type: 'text',
         rows: 3,
       },
+      {
+        name: 'teamMember',
+        title: 'Team member',
+        type: 'reference',
+        to: [
+          {type: 'people'}
+        ]
+      }
     ],
   };

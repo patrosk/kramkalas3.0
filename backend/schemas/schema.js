@@ -28,7 +28,7 @@ import poem from './documents/kim/objects/poem';
 import books from './documents/kim/objects/books';
 import book from './documents/kim/objects/book';
 
-
+import people from './documents/people/people';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -62,5 +62,7 @@ export default createSchema({
     poem,
     books,
     book,
+
+    people,
   ]),
 })
