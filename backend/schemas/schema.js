@@ -8,7 +8,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import home from './documents/home/home';
 import hero from './documents/home/objects/hero';
 import game from './documents/home/objects/game';
-import kimSection from './documents/home/objects/kim';
+import kimSection from './documents/home/objects/kimSection';
 
 // About page
 import about from './documents/about/about';
