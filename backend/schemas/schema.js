@@ -14,7 +14,7 @@ import kimSection from './documents/home/objects/kimSection';
 import about from './documents/about/about';
 import aboutHero from './documents/about/objects/hero';
 import team from './documents/about/objects/team';
-import partners from "./documents/about/objects/partners";
+import aboutPartners from "./documents/about/objects/aboutPartners";
 import projects from "./documents/about/objects/projects";
 
 // Contact page
@@ -28,7 +28,9 @@ import poem from './documents/kim/objects/poem';
 import books from './documents/kim/objects/books';
 import book from './documents/kim/objects/book';
 
+// People and partners
 import people from './documents/people/people';
+import partners from './documents/partners/partners';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -49,7 +51,7 @@ export default createSchema({
     about,
     aboutHero,
     team,
-    partners,
+    aboutPartners,
     projects,
 
     //Contact page schemas
@@ -63,6 +65,8 @@ export default createSchema({
     books,
     book,
 
+    // People and partners
     people,
+    partners,
   ]),
 })

@@ -21,7 +21,7 @@ export default {
             of: [
                 {type: 'aboutHero'},
                 {type: 'team'},
-                {type: 'partners'},
+                {type: 'aboutPartners'},
                 {type: 'projects'}
             ],
         },

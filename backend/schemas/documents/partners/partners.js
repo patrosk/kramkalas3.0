@@ -1,21 +1,16 @@
 export default {
-    name: 'people',
+    name: 'partners',
     type: 'document',
-    title: 'People',
+    title: 'Partners',
     fields: [
         {
-            name: 'firstName',
-            title: 'First Name',
+            name: 'name',
+            title: 'Name',
             type: 'string',
         },
         {
-            name: 'lastName',
-            title: 'Last Name',
-            type: 'string',
-        },
-        {
-            name: 'photo',
-            title: 'Photo',
+            name: 'image',
+            title: 'Image',
             type: 'image',
             option: {
               hotspot: true,
@@ -38,19 +33,19 @@ export default {
             ],
           },
         {
-            name: 'bio',
-            title: 'Biography',
+            name: 'description',
+            title: 'Description',
             type: 'text',
             rows: 3,
         },
         {
-            name: 'phone',
-            title: 'Phone Number',
+            name: 'linkText',
+            title: 'Link Text',
             type: 'string',
         },
         {
-            name: 'email',
-            title: 'Email Address',
+            name: 'linkUrl',
+            title: 'Link Url',
             type: 'string',
         },
     ],

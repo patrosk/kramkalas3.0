@@ -1,5 +1,5 @@
 export default {
-    name: 'partners',
+    name: 'aboutPartners',
     title: 'Partners section',
     type: 'object',
     fields: [

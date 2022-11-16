@@ -3,7 +3,8 @@
     <NuxtLink to="About">Om oss</NuxtLink>
     <NuxtLink to="Contact">Kontakta oss</NuxtLink>
     <NuxtLink to="Kim">Kim</NuxtLink>
-    <Home />
+    <!-- <Home /> -->
+    <Test />
   </div>
 </template>
 
