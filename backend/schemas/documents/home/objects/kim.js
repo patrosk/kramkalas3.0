@@ -1,5 +1,5 @@
 export default {
-    name: 'kim',
+    name: 'kimSection',
     title: 'Kim section',
     type: 'object',
     fields: [

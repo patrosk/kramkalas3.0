@@ -8,7 +8,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import home from './documents/home/home';
 import hero from './documents/home/objects/hero';
 import game from './documents/home/objects/game';
-import kim from './documents/home/objects/kim';
+import kimSection from './documents/home/objects/kim';
 
 // About page
 import about from './documents/about/about';
@@ -16,6 +16,19 @@ import aboutHero from './documents/about/objects/hero';
 import team from './documents/about/objects/team';
 import partners from "./documents/about/objects/partners";
 import projects from "./documents/about/objects/projects";
+
+// Contact page
+import contact from './documents/contact/contact';
+import contactHero from './documents/contact/objects/hero';
+
+// Kim page
+import kim from './documents/kim/kim';
+import kimHero from './documents/kim/objects/hero';
+import poem from './documents/kim/objects/poem';
+import books from './documents/kim/objects/books';
+import book from './documents/kim/objects/book';
+
+
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -30,13 +43,24 @@ export default createSchema({
     home,
     hero,
     game,
-    kim,
+    kimSection,
 
     //About page schemas
     about,
     aboutHero,
     team,
     partners,
-    projects
+    projects,
+
+    //Contact page schemas
+    contact,
+    contactHero,
+
+    //Kim page schemas
+    kim,
+    kimHero,
+    poem,
+    books,
+    book,
   ]),
 })

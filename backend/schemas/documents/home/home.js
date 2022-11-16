@@ -21,7 +21,7 @@ export default {
             of: [
                 {type: 'hero'},
                 {type: 'game'},
-                {type: 'kim'}
+                {type: 'kimSection'}
             ],
         },
     ],

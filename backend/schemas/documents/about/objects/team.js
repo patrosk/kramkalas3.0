@@ -10,7 +10,7 @@ export default {
         type: 'string',
       },
       {
-        name: 'teamDescription1',
+        name: 'teamDescription',
         title: 'Team description',
         type: 'text',
         rows: 3,
