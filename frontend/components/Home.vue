@@ -1,7 +1,7 @@
 <template>
   <section>
     <h1>{{ homePage.homePage[0].pageBuilder[0].h1 }}</h1>
-    <div>{{ homePage.homePage[0].pageBuilder[0].heroImage.asset._ref }}</div>
+    <div>{{ homePage.homePage[0].pageBuilder[1].gameImage.asset }}</div>
     <section class="hero">
       <div class="hero-img">
         <svg

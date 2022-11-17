@@ -1,22 +1,52 @@
 <template>
   <div>
     <h1>people</h1>
-    <div>{{ people }}</div>
+    <div>{{ homePage }}</div>
     <!-- <div>{{ pages.h1 }}</div>
     <div>{{ pages._children[0].title }}</div> -->
   </div>
 </template>
 
 <script>
+// import { groq } from "@nuxtjs/sanity";
+// const query = groq`{ "people": *[_type == "people"]}`;
+
+// export default {
+//   async asyncData({ $sanity }) {
+//     const { people } = await $sanity.fetch(query);
+//     return { people };
+//   },
+// };
 import { groq } from "@nuxtjs/sanity";
+const query = groq`{ "homePage": *[_type == "homePage"]}`;
+
 export default {
-  async asyncData({ $sanity }) {
-    const query = groq`*[_type == "people"]`;
-    const people = await $sanity.fetch(query);
-    console.log(people);
-    return { people };
+  // data() {
+  //   return {
+  //     homePage: [],
+  //   };
+  // },
+  async fetch() {
+    this.homePage = await this.$sanity.fetch(query);
   },
+  data: () => ({ homePage: "" }),
 };
+
+// import { groq } from "@nuxtjs/sanity";
+// export default {
+//   data() {
+//     return {
+//       people: [],
+//     };
+//   },
+//   async asyncData({ $sanity }) {
+//     const query = groq`*[_type == "people"]`;
+//     const people = await $sanity.fetch(query);
+//     console.log(people);
+//     return { people };
+//   },
+// };
+
 // export default {
 //   async fetch() {
 //     // const api =
