@@ -10,6 +10,56 @@ header {
   border-bottom: 4px solid var(--light-orange);
   height: 6rem;
 }
+header button {
+  border: none;
+  background-color: transparent;
+}
+header button:hover {
+  cursor: pointer;
+}
+.x {
+  padding-right: 2rem;
+  margin-top: -0.3rem;
+}
+.x1,
+.x2 {
+  width: 2rem;
+  height: 0.25rem;
+  background-color: var(--dark-orange);
+  border-radius: 6px;
+  position: absolute;
+}
+.x1 {
+  transform: rotate(45deg);
+}
+.x2 {
+  transform: rotate(-45deg);
+}
+.dropdown-content {
+  height: 83vh;
+  list-style: none;
+  padding: 3rem;
+  border-bottom: 4px solid var(--light-orange);
+  background-color: var(--off-white);
+}
+.dropdown-content svg {
+  height: 10rem;
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+.dropdown-content li {
+  font-family: Convergence;
+  font-size: var(--medium);
+  text-align: right;
+  padding-bottom: 2rem;
+}
+.dropdown-content li a {
+  color: var(--dark-orange);
+  text-decoration: none;
+}
+.dropdown-content li:hover a {
+  text-decoration: underline;
+}
 .hamburger {
   position: relative;
   width: 30px;
@@ -53,9 +103,9 @@ header {
   transform: translate3d(0, -0.9rem, 0) rotate(-90deg);
 } */
 
-.dropdown-content {
+/* .dropdown-content {
   display: none;
-}
+} */
 .desktop-menu {
   display: none;
 }

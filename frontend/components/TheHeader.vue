@@ -40,16 +40,16 @@
     </div>
     <nav>
       <!-- HAMBURGER MENU -->
-      <div class="dropdown">
-        <div class="hamburger">
+      <button class="dropdown">
+        <div class="hamburger" @click="showMobileMenu">
           <span class="hamburger-inner"></span>
         </div>
-        <ul class="dropdown-content">
+        <!-- <ul class="dropdown-content">
           <li><NuxtLink to="/">Hem</NuxtLink></li>
           <li><NuxtLink to="About">Om oss</NuxtLink></li>
           <li><NuxtLink to="Contact">Kontakta oss</NuxtLink></li>
-        </ul>
-      </div>
+        </ul> -->
+      </button>
 
       <!-- DESKTOP MENU -->
       <div class="desktop-menu">
@@ -65,4 +65,22 @@
 
 <script>
 console.log("Hello from header");
+
+export default {
+  methods: {
+    showMobileMenu() {
+      this.$emit("showMobileMenu");
+    },
+  },
+};
+
+// // HAMBURGER AND DROPDOWN MENU ANIMATION
+// const menuButton = document.querySelector(".dropdown-button");
+// const dropdown = document.querySelector(".dropdown-content");
+// const hamburgerSpans = document.querySelector(".hamburger span");
+
+// menuButton.addEventListener("click", () => {
+//   dropdown.classList.toggle("show");
+//   hamburgerSpans.classList.toggle("is-active");
+// });
 </script>
