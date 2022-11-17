@@ -53,7 +53,7 @@ export default {
       {
         name: 'heroLinkUrl',
         title: 'Hero link url',
-        type: 'url',
+        type: 'string',
       },
     ],
   };

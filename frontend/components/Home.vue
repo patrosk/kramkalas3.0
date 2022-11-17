@@ -225,7 +225,7 @@
         {{ homePage.homePage[0].pageBuilder[0].heroDescription2 }}
       </p>
       <p class="hero-link">
-        <NuxtLink to="About">{{
+        <NuxtLink :to="homePage.homePage[0].pageBuilder[0].heroLinkUrl">{{
           homePage.homePage[0].pageBuilder[0].heroLinkText
         }}</NuxtLink>
       </p>
@@ -246,7 +246,7 @@
         {{ homePage.homePage[0].pageBuilder[2].kimDescription }}
       </p>
       <p class="about-link">
-        <NuxtLink to="Kim">{{
+        <NuxtLink :to="homePage.homePage[0].pageBuilder[2].kimLinkUrl">{{
           homePage.homePage[0].pageBuilder[2].kimLinkText
         }}</NuxtLink>
       </p>

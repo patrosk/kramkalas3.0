@@ -47,7 +47,7 @@ export default {
           {
             name: 'kimLinkUrl',
             title: 'Kim link url',
-            type: 'url',
+            type: 'string',
           },
         ],
   };
