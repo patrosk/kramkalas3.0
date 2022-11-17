@@ -60,8 +60,6 @@
 </template>
 
 <script>
-console.log("Hello from header");
-
 export default {
   methods: {
     showMobileMenu() {
