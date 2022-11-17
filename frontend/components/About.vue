@@ -20,7 +20,10 @@
       <div class="team-container">
         <div class="team-card">
           <div class="img-container">
-            <SanityImage :asset-id="page.page[3].photo.asset._ref" />
+            <SanityImage
+              :asset-id="page.page[3].photo.asset._ref"
+              :alt="page.page[3].photo.caption"
+            />
           </div>
           <h3>{{ page.page[3].firstName + " " + page.page[3].lastName }}</h3>
           <p class="bio">
@@ -32,7 +35,10 @@
         </div>
         <div class="team-card">
           <div class="img-container">
-            <SanityImage :asset-id="page.page[2].photo.asset._ref" />
+            <SanityImage
+              :asset-id="page.page[2].photo.asset._ref"
+              :alt="page.page[2].photo.caption"
+            />
           </div>
           <h3>{{ page.page[2].firstName + " " + page.page[2].lastName }}</h3>
           <p class="bio">
@@ -44,7 +50,10 @@
         </div>
         <div class="team-card">
           <div class="img-container">
-            <SanityImage :asset-id="page.page[1].photo.asset._ref" />
+            <SanityImage
+              :asset-id="page.page[1].photo.asset._ref"
+              :alt="page.page[1].photo.caption"
+            />
           </div>
           <h3>{{ page.page[1].firstName + " " + page.page[1].lastName }}</h3>
           <p class="bio">
@@ -64,7 +73,10 @@
       <div class="partners-container">
         <div class="partner-card">
           <div class="img-container">
-            <SanityImage :asset-id="page.page[4].image.asset._ref" />
+            <SanityImage
+              :asset-id="page.page[4].image.asset._ref"
+              :alt="page.page[4].image.caption"
+            />
           </div>
           <h3>{{ page.page[4].name }}</h3>
           <p class="description">
@@ -76,7 +88,10 @@
         </div>
         <div class="partner-card">
           <div class="img-container">
-            <SanityImage :asset-id="page.page[5].image.asset._ref" />
+            <SanityImage
+              :asset-id="page.page[5].image.asset._ref"
+              :alt="page.page[5].image.caption"
+            />
           </div>
           <h3>{{ page.page[5].name }}</h3>
           <p class="description">

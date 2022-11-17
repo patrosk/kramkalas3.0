@@ -3,7 +3,10 @@
     <h1>{{ kimPage.kimPage[0].pageBuilder[0].h1 }}</h1>
     <section class="kim">
       <div class="img-container">
-        <img src="../images/kim.png" alt="" />
+        <SanityImage
+          :asset-id="kimPage.kimPage[0].pageBuilder[0].heroImage.asset._ref"
+          :alt="kimPage.kimPage[0].pageBuilder[0].heroImage.caption"
+        />
       </div>
       <section class="hemma-hos-kim">
         <h3>{{ kimPage.kimPage[0].pageBuilder[1].heading }}</h3>
@@ -71,7 +74,12 @@
           <div class="book">
             <h4>{{ kimPage.kimPage[0].pageBuilder[3].heading }}</h4>
             <div class="img-container">
-              <img src="../images/javacutie.jpg" alt="" />
+              <SanityImage
+                :asset-id="
+                  kimPage.kimPage[0].pageBuilder[3].bookCover.asset._ref
+                "
+                :alt="kimPage.kimPage[0].pageBuilder[3].bookCover.caption"
+              />
             </div>
             <p class="book-description">
               {{ kimPage.kimPage[0].pageBuilder[3].bookDescription }}:
