@@ -62,3 +62,7 @@
     </nav>
   </header>
 </template>
+
+<script>
+console.log("Hello from header");
+</script>

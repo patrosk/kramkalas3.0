@@ -264,12 +264,4 @@ export default {
   },
   data: () => ({ homePage: "" }),
 };
-
-// export default {
-//   async asyncData({ $sanity }) {
-//     const homePage = await $sanity.fetch(query);
-//     console.log(homePage);
-//     return { homePage };
-//   },
-// };
 </script>

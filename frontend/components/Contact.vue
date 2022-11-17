@@ -1,17 +1,15 @@
 <template>
   <section>
-    <h1>{{ contactPage.contactPage[0].pageBuilder[0].h1 }}</h1>
+    <h1>{{ page.page[0].pageBuilder[0].h1 }}</h1>
     <section class="hero">
       <p class="hero-description-1">
-        {{ contactPage.contactPage[0].pageBuilder[0].heroDescription1 }}
+        {{ page.page[0].pageBuilder[0].heroDescription1 }}
       </p>
       <p class="hero-description-2">
-        {{ contactPage.contactPage[0].pageBuilder[0].heroDescription2 }}
+        {{ page.page[0].pageBuilder[0].heroDescription2 }}
       </p>
       <p class="email">
-        <a href="#">{{
-          contactPage.contactPage[0].pageBuilder[0].heroEmailText
-        }}</a>
+        <a href="#">{{ page.page[0].pageBuilder[0].heroEmailText }}</a>
       </p>
     </section>
     <section class="contact-container">
@@ -20,9 +18,11 @@
           <img src="../images/javacutie.jpg" alt="" />
         </div>
         <div class="contact-content">
-          <h3>Oskar Fritz</h3>
-          <p class="email"><a href="#">emailaddress@gmail.com</a></p>
-          <p>phone number</p>
+          <h3>{{ page.page[3].firstName + " " + page.page[3].lastName }}</h3>
+          <p class="email">
+            <a href="#">{{ page.page[3].email }}</a>
+          </p>
+          <p>{{ page.page[3].phone }}</p>
         </div>
       </div>
       <div class="contact-card">
@@ -30,9 +30,11 @@
           <img src="../images/javacutie.jpg" alt="" />
         </div>
         <div class="contact-content">
-          <h3>Joakim Kaldemark</h3>
-          <p class="email"><a href="#">emailaddress@gmail.com</a></p>
-          <p>phone number</p>
+          <h3>{{ page.page[2].firstName + " " + page.page[2].lastName }}</h3>
+          <p class="email">
+            <a href="#">{{ page.page[2].email }}</a>
+          </p>
+          <p>{{ page.page[2].phone }}</p>
         </div>
       </div>
       <div class="contact-card">
@@ -40,9 +42,11 @@
           <img src="../images/javacutie.jpg" alt="" />
         </div>
         <div class="contact-content">
-          <h3>Nema Vinkeloe Uuskyla</h3>
-          <p class="email"><a href="#">emailaddress@gmail.com</a></p>
-          <p>phone number</p>
+          <h3>{{ page.page[1].firstName + " " + page.page[1].lastName }}</h3>
+          <p class="email">
+            <a href="#">{{ page.page[1].email }}</a>
+          </p>
+          <p>{{ page.page[1].phone }}</p>
         </div>
       </div>
     </section>
@@ -51,12 +55,12 @@
 
 <script>
 import { groq } from "@nuxtjs/sanity";
-const query = groq`{ "contactPage": *[_type == "contactPage"]}`;
+const query = groq`{ "page": *[_type == "contactPage"] + *[_type == "people"]}`;
 
 export default {
   async fetch() {
-    this.contactPage = await this.$sanity.fetch(query);
+    this.page = await this.$sanity.fetch(query);
   },
-  data: () => ({ contactPage: "" }),
+  data: () => ({ page: "" }),
 };
 </script>

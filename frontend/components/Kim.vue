@@ -27,7 +27,7 @@
           <br />
           {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph4b }}
           <br />
-          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph4b }}
+          {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph4c }}
         </p>
         <p>
           {{ kimPage.kimPage[0].pageBuilder[1].poemParagraph5a }}
