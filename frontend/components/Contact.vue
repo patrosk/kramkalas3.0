@@ -15,7 +15,7 @@
     <section class="contact-container">
       <div class="contact-card">
         <div class="img-container">
-          <img src="../images/javacutie.jpg" alt="" />
+          <SanityImage :asset-id="page.page[3].photo.asset._ref" />
         </div>
         <div class="contact-content">
           <h3>{{ page.page[3].firstName + " " + page.page[3].lastName }}</h3>
@@ -27,7 +27,7 @@
       </div>
       <div class="contact-card">
         <div class="img-container">
-          <img src="../images/javacutie.jpg" alt="" />
+          <SanityImage :asset-id="page.page[2].photo.asset._ref" />
         </div>
         <div class="contact-content">
           <h3>{{ page.page[2].firstName + " " + page.page[2].lastName }}</h3>
@@ -39,7 +39,7 @@
       </div>
       <div class="contact-card">
         <div class="img-container">
-          <img src="../images/javacutie.jpg" alt="" />
+          <SanityImage :asset-id="page.page[1].photo.asset._ref" />
         </div>
         <div class="contact-content">
           <h3>{{ page.page[1].firstName + " " + page.page[1].lastName }}</h3>

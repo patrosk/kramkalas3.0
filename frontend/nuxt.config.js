@@ -43,6 +43,12 @@ export default {
     projectId: '6jp7ceyw'
   },
 
+  image: {
+    sanity: {
+      projectId: "6jp7ceyw",
+    },
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },

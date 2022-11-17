@@ -232,7 +232,9 @@
     </section>
     <section class="game">
       <h2>{{ homePage.homePage[0].pageBuilder[1].heading }}</h2>
-      <img src="../images/javacutie.jpg" alt="" />
+      <SanityImage
+        :asset-id="homePage.homePage[0].pageBuilder[1].gameImage.asset._ref"
+      />
       <p class="game-description">
         {{ homePage.homePage[0].pageBuilder[1].gameDescription }}
       </p>
