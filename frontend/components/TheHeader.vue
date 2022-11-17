@@ -44,19 +44,15 @@
         <div class="hamburger" @click="showMobileMenu">
           <span class="hamburger-inner"></span>
         </div>
-        <!-- <ul class="dropdown-content">
-          <li><NuxtLink to="/">Hem</NuxtLink></li>
-          <li><NuxtLink to="About">Om oss</NuxtLink></li>
-          <li><NuxtLink to="Contact">Kontakta oss</NuxtLink></li>
-        </ul> -->
       </button>
 
       <!-- DESKTOP MENU -->
       <div class="desktop-menu">
         <ul>
-          <li><NuxtLink to="/">Hem</NuxtLink></li>
-          <li><NuxtLink to="About">Om oss</NuxtLink></li>
-          <li><NuxtLink to="Contact">Kontakta oss</NuxtLink></li>
+          <li><NuxtLink to="/">hem</NuxtLink></li>
+          <li><NuxtLink to="About">om oss</NuxtLink></li>
+          <li><NuxtLink to="Kim">nallebjörnen Kim</NuxtLink></li>
+          <li><NuxtLink to="Contact">kontakta oss</NuxtLink></li>
         </ul>
       </div>
     </nav>
@@ -73,14 +69,4 @@ export default {
     },
   },
 };
-
-// // HAMBURGER AND DROPDOWN MENU ANIMATION
-// const menuButton = document.querySelector(".dropdown-button");
-// const dropdown = document.querySelector(".dropdown-content");
-// const hamburgerSpans = document.querySelector(".hamburger span");
-
-// menuButton.addEventListener("click", () => {
-//   dropdown.classList.toggle("show");
-//   hamburgerSpans.classList.toggle("is-active");
-// });
 </script>

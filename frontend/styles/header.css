@@ -1,5 +1,4 @@
 @import "./variables.css";
-/* is main necessary to include? */
 
 header {
   background-color: var(--off-white);
@@ -16,6 +15,9 @@ header button {
 }
 header button:hover {
   cursor: pointer;
+}
+nav {
+  display: flex;
 }
 .x {
   padding-right: 2rem;
@@ -92,20 +94,32 @@ header button:hover {
 .hamburger-inner::after {
   top: 0.45rem;
 }
-/* .hamburger-inner.is-active {
-  transform: translate3d(0, 10px, 0) rotate(45deg);
-}
-.hamburger-inner.is-active::before {
-  transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
-  opacity: 0;
-}
-.hamburger-inner.is-active::after {
-  transform: translate3d(0, -0.9rem, 0) rotate(-90deg);
-} */
-
-/* .dropdown-content {
-  display: none;
-} */
 .desktop-menu {
   display: none;
+}
+.desktop-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.desktop-menu li {
+  font-family: Convergence;
+  margin: 1rem;
+}
+.desktop-menu li a {
+  color: var(--dark-orange);
+  text-decoration: none;
+}
+.desktop-menu li:hover a {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 700px) {
+  .hamburger {
+    display: none;
+  }
+  .desktop-menu {
+    display: block;
+  }
 }
