@@ -174,22 +174,26 @@
         <li>
           kontakta oss
           <ul class="contact">
-            <li>tel nr</li>
-            <li>mejl</li>
+            <li>+46 723 091565</li>
+            <li>
+              <a href="mailto:hej.kramkalas@gmail.com"
+                >hej.kramkalas@gmail.com</a
+              >
+            </li>
           </ul>
         </li>
         <li>
           adress
           <ul class="address">
-            <li>väg</li>
-            <li>postnummer</li>
-            <li>hitta hit länk</li>
+            <li>c/o Prästvägen 375</li>
+            <li>442 93 Kungälv</li>
+            <!-- <li>hitta hit länk</li> -->
           </ul>
         </li>
         <li>
           sociala medier
           <ul class="socials">
-            <li>insta</li>
+            <li>instagram</li>
             <li>facebook</li>
           </ul>
         </li>

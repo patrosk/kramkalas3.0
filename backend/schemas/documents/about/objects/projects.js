@@ -23,7 +23,7 @@ export default {
       },
       {
         name: 'companyEmailText',
-        title: 'Company email Text',
+        title: 'Company email text',
         type: 'string'
       },
       {

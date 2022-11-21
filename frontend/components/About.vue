@@ -32,7 +32,9 @@
             {{ page.page[3].bio }}
           </p>
           <p class="email">
-            <a href="#">skicka ett mejl till {{ page.page[3].firstName }}</a>
+            <a :href="'mailto:' + page.page[3].email"
+              >skicka ett mejl till {{ page.page[3].firstName }}</a
+            >
           </p>
         </div>
         <div class="team-card">
@@ -47,7 +49,9 @@
             {{ page.page[2].bio }}
           </p>
           <p class="email">
-            <a href="#">skicka ett mejl till {{ page.page[2].firstName }}</a>
+            <a :href="'mailto:' + page.page[2].email"
+              >skicka ett mejl till {{ page.page[2].firstName }}</a
+            >
           </p>
         </div>
         <div class="team-card">
@@ -62,7 +66,9 @@
             {{ page.page[1].bio }}
           </p>
           <p class="email">
-            <a href="#">skicka ett mejl till {{ page.page[1].firstName }}</a>
+            <a :href="'mailto:' + page.page[1].email"
+              >skicka ett mejl till {{ page.page[1].firstName }}</a
+            >
           </p>
         </div>
       </div>
@@ -100,7 +106,10 @@
           {{ page.page[0].pageBuilder[3].projectsDescription2 }}
         </p>
         <p class="email">
-          <a href="#">{{ page.page[0].pageBuilder[3].companyEmailText }}</a>
+          <a
+            :href="'mailto:' + page.page[0].pageBuilder[3].companyEmailAddress"
+            >{{ page.page[0].pageBuilder[3].companyEmailText }}</a
+          >
         </p>
       </div>
     </section>

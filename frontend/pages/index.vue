@@ -1,7 +1,6 @@
 <template>
   <div class="main">
     <Home />
-    <!-- <Pages /> -->
   </div>
 </template>
 

@@ -10,7 +10,9 @@
           {{ page.page[0].pageBuilder[0].heroDescription2 }}
         </p>
         <p class="email">
-          <a href="#">{{ page.page[0].pageBuilder[0].heroEmailText }}</a>
+          <a :href="'mailto:' + page.page[0].pageBuilder[0].heroEmailText">{{
+            page.page[0].pageBuilder[0].heroEmailText
+          }}</a>
         </p>
       </div>
     </section>
@@ -22,7 +24,9 @@
         <div class="contact-content">
           <h3>{{ page.page[3].firstName + " " + page.page[3].lastName }}</h3>
           <p class="email">
-            <a href="#">{{ page.page[3].email }}</a>
+            <a :href="'mailto:' + page.page[3].email">{{
+              page.page[3].email
+            }}</a>
           </p>
           <p>{{ page.page[3].phone }}</p>
         </div>
@@ -34,7 +38,9 @@
         <div class="contact-content">
           <h3>{{ page.page[2].firstName + " " + page.page[2].lastName }}</h3>
           <p class="email">
-            <a href="#">{{ page.page[2].email }}</a>
+            <a :href="'mailto:' + page.page[2].email">{{
+              page.page[2].email
+            }}</a>
           </p>
           <p>{{ page.page[2].phone }}</p>
         </div>
@@ -46,7 +52,9 @@
         <div class="contact-content">
           <h3>{{ page.page[1].firstName + " " + page.page[1].lastName }}</h3>
           <p class="email">
-            <a href="#">{{ page.page[1].email }}</a>
+            <a :href="'mailto:' + page.page[1].email">{{
+              page.page[1].email
+            }}</a>
           </p>
           <p>{{ page.page[1].phone }}</p>
         </div>

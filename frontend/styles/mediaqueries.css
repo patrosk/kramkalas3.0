@@ -38,7 +38,7 @@
     max-width: 70%;
   }
   .footer-content {
-    margin: 0 18rem !important;
+    margin: 0 12rem !important;
   }
   .footer-list {
     display: flex;
@@ -65,6 +65,14 @@
   }
   .hos-kim {
     display: flex;
+    justify-content: space-between;
+    padding: 0 4rem;
+  }
+  .hos-kim .img-container {
+    width: 24rem;
+  }
+  .hemma-hos-kim {
+    margin-top: 0;
   }
   .books-wrapper {
     display: flex;
@@ -73,6 +81,9 @@
   .books-description {
     max-width: 40%;
     margin-top: 4rem;
+  }
+  .books h2 {
+    margin-bottom: 0;
   }
   .book {
     margin-top: 0 !important;

@@ -23,6 +23,9 @@ footer ul {
   list-style: none;
   padding: 0;
 }
+footer ul a {
+  color: var(--dark-grey);
+}
 .footer-list > li {
   font-family: Convergence;
   color: var(--dark-orange);
