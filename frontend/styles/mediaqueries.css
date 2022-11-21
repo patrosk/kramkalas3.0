@@ -1,0 +1,88 @@
+@media screen and (min-width: 800px) {
+  header {
+    padding: 1.2rem 4rem;
+  }
+  .main {
+    padding: 5rem 10rem !important;
+  }
+  .hero-description-1 {
+    margin: 0;
+  }
+  section .hero,
+  .game-container,
+  .about-container {
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+  }
+  .team-description,
+  .partners-description {
+    max-width: 70%;
+  }
+  .team-container {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .team-card {
+    max-width: 30%;
+  }
+  .partner-card {
+    max-width: 50%;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects p {
+    max-width: 70%;
+  }
+  .footer-content {
+    margin: 0 18rem !important;
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+  .footer-list li {
+    text-align: left !important;
+  }
+  .about.p-container {
+    max-width: 70%;
+  }
+  .about-h1 {
+    text-align: center;
+  }
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .contact-card {
+    justify-content: left;
+    gap: 1rem;
+  }
+  .hos-kim {
+    display: flex;
+  }
+  .books-wrapper {
+    display: flex;
+    gap: 5rem;
+  }
+  .books-description {
+    max-width: 40%;
+    margin-top: 4rem;
+  }
+  .book {
+    margin-top: 0 !important;
+    display: flex;
+    gap: 2rem;
+  }
+  .book-info {
+    margin-top: 4rem;
+  }
+  .book-excerpt {
+    margin: 0;
+  }
+}

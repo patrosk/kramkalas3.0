@@ -27,5 +27,11 @@ export default {
         type: 'text',
         rows: 3,
       },
+      {
+        name: 'booksDescription4',
+        title: 'Books description: paragraph 4',
+        type: 'text',
+        rows: 3,
+      },
     ]
 };

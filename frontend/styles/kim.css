@@ -9,3 +9,14 @@
   width: 100%;
   object-fit: scale-down;
 }
+
+.kim h4 {
+  color: var(--dark-orange);
+}
+
+.books-container .book {
+  margin-top: 4rem;
+}
+.book-excerpt {
+  margin: 0 1rem;
+}

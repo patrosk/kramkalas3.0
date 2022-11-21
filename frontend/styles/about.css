@@ -1,5 +1,8 @@
 @import "./variables.css";
 
+.hero .email {
+  text-align: center;
+}
 .team,
 .partners,
 .projects {
@@ -21,6 +24,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 2rem;
 }
 .team .img-container,
 .partners .img-container {

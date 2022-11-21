@@ -5,6 +5,7 @@
 @import "./about.css";
 @import "./contact.css";
 @import "./kim.css";
+@import "./mediaqueries.css";
 
 * {
   box-sizing: border-box;
@@ -18,7 +19,7 @@ body {
 }
 
 .main {
-  padding: 40px;
+  padding: 2.5rem;
 }
 
 .main a {
@@ -27,6 +28,10 @@ body {
 }
 .hero {
   margin-top: 5rem;
+}
+
+section {
+  margin-top: 4rem;
 }
 
 h1 {

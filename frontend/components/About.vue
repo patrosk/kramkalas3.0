@@ -2,15 +2,17 @@
   <section>
     <h1>{{ page.page[0].pageBuilder[0].h1 }}</h1>
     <section class="hero">
-      <p class="hero-description-1">
-        {{ page.page[0].pageBuilder[0].heroDescription1 }}
-      </p>
-      <p class="hero-description-2">
-        {{ page.page[0].pageBuilder[0].heroDescription2 }}
-      </p>
-      <p class="hero-description-3">
-        {{ page.page[0].pageBuilder[0].heroDescription3 }}
-      </p>
+      <div class="p-container">
+        <p class="hero-description-1">
+          {{ page.page[0].pageBuilder[0].heroDescription1 }}
+        </p>
+        <p class="hero-description-2">
+          {{ page.page[0].pageBuilder[0].heroDescription2 }}
+        </p>
+        <p class="hero-description-3">
+          {{ page.page[0].pageBuilder[0].heroDescription3 }}
+        </p>
+      </div>
     </section>
     <section class="team">
       <h2>{{ page.page[0].pageBuilder[1].heading }}</h2>
@@ -82,24 +84,9 @@
           <p class="description">
             {{ page.page[4].description }}
           </p>
-          <p class="link">
+          <!-- <p class="link">
             <a href="#">{{ page.page[4].linkText }}</a>
-          </p>
-        </div>
-        <div class="partner-card">
-          <div class="img-container">
-            <SanityImage
-              :asset-id="page.page[5].image.asset._ref"
-              :alt="page.page[5].image.caption"
-            />
-          </div>
-          <h3>{{ page.page[5].name }}</h3>
-          <p class="description">
-            {{ page.page[5].description }}
-          </p>
-          <p class="link">
-            <a href="#">{{ page.page[5].linkText }}</a>
-          </p>
+          </p> -->
         </div>
       </div>
     </section>

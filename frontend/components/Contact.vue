@@ -1,16 +1,18 @@
 <template>
   <section>
-    <h1>{{ page.page[0].pageBuilder[0].h1 }}</h1>
+    <h1 class="about-h1">{{ page.page[0].pageBuilder[0].h1 }}</h1>
     <section class="hero">
-      <p class="hero-description-1">
-        {{ page.page[0].pageBuilder[0].heroDescription1 }}
-      </p>
-      <p class="hero-description-2">
-        {{ page.page[0].pageBuilder[0].heroDescription2 }}
-      </p>
-      <p class="email">
-        <a href="#">{{ page.page[0].pageBuilder[0].heroEmailText }}</a>
-      </p>
+      <div class="about p-container">
+        <p class="hero-description-1">
+          {{ page.page[0].pageBuilder[0].heroDescription1 }}
+        </p>
+        <p class="hero-description-2">
+          {{ page.page[0].pageBuilder[0].heroDescription2 }}
+        </p>
+        <p class="email">
+          <a href="#">{{ page.page[0].pageBuilder[0].heroEmailText }}</a>
+        </p>
+      </div>
     </section>
     <section class="contact-container">
       <div class="contact-card">
