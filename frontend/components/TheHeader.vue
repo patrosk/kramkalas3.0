@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="logo">
-      <a href="/">
+      <a href="/" aria="link to home page">
         <svg
           width="167"
           height="48"
@@ -42,7 +42,7 @@
     </div>
     <nav>
       <!-- HAMBURGER MENU -->
-      <button class="dropdown">
+      <button class="dropdown-menu-button">
         <div class="hamburger" @click="showMobileMenu">
           <span class="hamburger-inner"></span>
         </div>
@@ -51,10 +51,20 @@
       <!-- DESKTOP MENU -->
       <div class="desktop-menu">
         <ul>
-          <li><NuxtLink to="/">hem</NuxtLink></li>
-          <li><NuxtLink to="About">om oss</NuxtLink></li>
-          <li><NuxtLink to="Kim">nallebjörnen Kim</NuxtLink></li>
-          <li><NuxtLink to="Contact">kontakta oss</NuxtLink></li>
+          <li><NuxtLink to="/" aria="link to home page">hem</NuxtLink></li>
+          <li>
+            <NuxtLink to="About" aria="link to about page">om oss</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="Kim" aria="link to kim page"
+              >nallebjörnen Kim</NuxtLink
+            >
+          </li>
+          <li>
+            <NuxtLink to="Contact" aria="link to contact page"
+              >kontakta oss</NuxtLink
+            >
+          </li>
         </ul>
       </div>
     </nav>

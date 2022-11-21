@@ -67,6 +67,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 4rem;
+    gap: 5rem;
   }
   .hos-kim .img-container {
     width: 24rem;
