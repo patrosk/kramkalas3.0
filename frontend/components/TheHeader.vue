@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="logo">
-      <a href="/" aria="link to home page">
+      <a href="/" aria-label="link to home page">
         <svg
           width="167"
           height="48"
@@ -51,17 +51,21 @@
       <!-- DESKTOP MENU -->
       <div class="desktop-menu">
         <ul>
-          <li><NuxtLink to="/" aria="link to home page">hem</NuxtLink></li>
           <li>
-            <NuxtLink to="About" aria="link to about page">om oss</NuxtLink>
+            <NuxtLink to="/" aria-label="link to home page">hem</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="Kim" aria="link to kim page"
+            <NuxtLink to="About" aria-label="link to about page"
+              >om oss</NuxtLink
+            >
+          </li>
+          <li>
+            <NuxtLink to="Kim" aria-label="link to kim page"
               >nallebjörnen Kim</NuxtLink
             >
           </li>
           <li>
-            <NuxtLink to="Contact" aria="link to contact page"
+            <NuxtLink to="Contact" aria-label="link to contact page"
               >kontakta oss</NuxtLink
             >
           </li>
