@@ -193,8 +193,14 @@
         <li>
           sociala medier
           <ul class="socials">
-            <li>instagram</li>
-            <li>facebook</li>
+            <li>
+              <a
+                target="blank"
+                href="https://www.instagram.com/kramkalas_official/"
+              >
+                instagram</a
+              >
+            </li>
           </ul>
         </li>
       </ul>

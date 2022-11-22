@@ -34,7 +34,7 @@
             {{ homePage.homePage[0].pageBuilder[1].gameDescription }}
           </p>
           <p class="game-link">
-            <a href="/">{{
+            <a target="blank" href="/">{{
               homePage.homePage[0].pageBuilder[1].gameLinkText
             }}</a>
           </p>
