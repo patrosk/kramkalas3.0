@@ -24,8 +24,8 @@ export default {
         {
           hid: "google-site-verification",
           name: "google-site-verification",
-         content="tffNJnN5EORQkDKq91hgAq1PEVS5NzMjCd4RWpFCVdg",
-        }
+          content: "tffNJnN5EORQkDKq91hgAq1PEVS5NzMjCd4RWpFCVdg",
+        },
       ],
     };
   },
