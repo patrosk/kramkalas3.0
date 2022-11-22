@@ -21,6 +21,11 @@ export default {
           name: "og:image",
           content: "../images/kramkalaslogo.svg",
         },
+        {
+          hid: "google-site-verification",
+          name: "google-site-verification",
+         content="tffNJnN5EORQkDKq91hgAq1PEVS5NzMjCd4RWpFCVdg",
+        },
       ],
     };
   },
