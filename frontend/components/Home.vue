@@ -34,9 +34,9 @@
             {{ homePage.homePage[0].pageBuilder[1].gameDescription }}
           </p>
           <p class="game-link">
-            <a target="blank" href="/">{{
-              homePage.homePage[0].pageBuilder[1].gameLinkText
-            }}</a>
+            <NuxtLink target="blank" to="Game">
+              {{ homePage.homePage[0].pageBuilder[1].gameLinkText }}</NuxtLink
+            >
           </p>
         </div>
       </div>
