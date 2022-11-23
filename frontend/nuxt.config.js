@@ -37,7 +37,12 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     ['@nuxtjs/axios'],
+    ['@nuxtjs/proxy']
   ],
+
+  axios: {
+    proxy: true,
+  },
 
   sanity: {
     projectId: '6jp7ceyw'

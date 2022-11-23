@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>people</h1>
-    <div>{{ homePage }}</div>
+    <h1>About</h1>
+
     <!-- <div>{{ pages.h1 }}</div>
     <div>{{ pages._children[0].title }}</div> -->
   </div>
